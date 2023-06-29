@@ -1,0 +1,110 @@
+html {
+    background-color: #ffdadf;
+    justify-content: center;
+} 
+
+.title {
+    color: #fd3765;
+    background-color: #ffdadf;
+    border: 10px double orangered;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Tenor Sans', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 600px;
+    height: 175px;  
+}
+
+h2 {
+    color: #fd3765;
+    background-color: #ffdadf;
+    border: 10px double orangered;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 600px;
+    height: 175px;
+
+}
+
+.question {
+    color: #ffdadf;
+    background-color: #fd3765;
+    border: 10px solid #fe97b0;
+    padding: 20px; 
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    box-sizing: content-box;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+.answer {
+    color: #ffdadf;
+    background-color: #fe97b0;
+    border: 10px solid orangered;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-weight: bold;
+    font-size: x-large;
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+.buttonA {
+    color: #ffdadf;
+    background-color: #fe97b0;
+    border: 10px solid orangered;
+    padding: 20px;
+    display: flex; 
+    text-align: center;
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: bold;
+    font-size: large;
+ 
+}
+
+.buttonB {
+    color: #ffdadf;
+    background-color: orangered;
+    border: 10px solid #fe97b0;
+    padding: 20px;
+    display: flex; 
+    text-align: center;
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.timer {
+   color:#fd3765; 
+   font-family: 'Tenor Sans', sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
