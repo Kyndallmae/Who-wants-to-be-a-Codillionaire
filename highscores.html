@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who Wants To Be A Codillianair?</title>
     <link href="highscores.css" rel="stylesheet">
+    <script src="script.js"></script>
     <script src="highscores.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +18,11 @@
 </header>
 <body>
     <h1 class="title" id="table">High Scores!</h1>
+    <form ic = "form" action="submit">
+        <input type="text" id = "initials" name = "initials" placeholder = "Initials"><br>
+        <input type="text" id = "score" name = "score" placeholder = "Score"><br>
+        <input type="submit" id = "submit" value="Submit">
+    </form>
     <table class="table">
         <tr class="names">
            <th>Initials</th>
@@ -28,3 +34,5 @@
     </table>
 </body>
 </html>
+
+<!--form -->

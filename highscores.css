@@ -11,11 +11,10 @@ html {
     text-align: center;
     font-family: 'Tenor Sans', sans-serif;
     font-weight: bold;
-    font-size: large;
-    
+    font-size: large; 
 }
 
-.table {
+#initials, #score {
     color: #ffdadf;
     background-color: #fd3765;
     border: 10px solid #fe97b0;
@@ -28,7 +27,7 @@ html {
     justify-content: center;
     align-items: center;
     font-size: larger;
-    margin: 10px;
+    margin: 5px;
     width: 300px;
     height: 40px;
 }
@@ -47,4 +46,19 @@ html {
     font-weight: bold;
     width: 350px;
     height: 100px;
+}
+#submit {
+    color: #fd3765;
+    background-color: #ffdadf;
+    border: 10px double orangered;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Tenor Sans', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100px;
+    height: 75px;
 }
