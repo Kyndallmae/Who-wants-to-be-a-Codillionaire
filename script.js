@@ -126,6 +126,7 @@ function startTimer() {
         }
     }, 1000);
 };
+
 // Stops timer
 function stopTimer() {
     clearInterval(timeInterval);

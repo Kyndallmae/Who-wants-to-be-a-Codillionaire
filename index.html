@@ -1,68 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who Wants To Be A Codillianair?</title>
-        <link href="./style.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Code Quiz</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="./highscores.html">
-            <button class="buttonA" type="button">High Scores</button>
-        </a>
-        <button class="buttonB" type="button">Start Game!</button> 
-        <h1 class="timer"></h1>
+
+    <header>
+        <button id="highscore" class="highscore">HighScores</button>
+        <h3 class="timer" id="timer"></h3>
     </header>
-
-    <h1 class="title">Let's Play "Who Wants To Be A Codillionaire?"</h1>
-    <div id= "questionSection"></div>
-    <div id= "feedbackSection"></div>
     
+    <!-- Starting/home page -->
+    <div class="container" id="home">
+        <h1>Who Wants to be a Codillionair!</h1>
+        <button id="start-btn" class="btn">Start</button>
+    </div>
 
-    <script src="./script.js"></script>
+    <!-- Quiz -->
+    <div class="container hide" id="quiz">
+
+        <!-- Question -->
+        <h2 id="question">Question...</h2>
+
+        <!-- Answers/choices -->
+        <ul>
+            <li>
+                <input type="radio" name="answer" id="a" class="answer" />
+                <label for="a" id="a_text">Answer...</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="b" class="answer" />
+                <label for="b" id="b_text">Answer...</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="c" class="answer" />
+                <label for="c" id="c_text">Answer...</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="d" class="answer" />
+                <label for="d" id="d_text">Answer...</label>
+            </li>
+        </ul>
+        <button class="btn" id="next-btn">Next</button>
+    </div>
+
+    <!-- Correct or Incorrect notification -->
+    <p class="is-correct" id="correct-or-incorrect"></p>
+
+    <!-- Save score to highscore page -->
+    <div class="hide" id="input-score">
+        <div class="input-score-container">
+            <h1>Congratulations!</h1>
+            <p class="score">Your final score: <span id="score"></span></p>
+            <p class="score">Enter initals: <input type="text" placeholder="initials" id="initials"></p>
+            <button class="score-btn" id="submit-score">Submit</button>
+        </div>
+    </div>
+
+    <!-- Out of time page -->
+    <div class="hide" id="you-lose">
+        <div class="lose-container">
+            <h1>Out of time!</h1>
+            <button class="try-again-btn" id="try-again-btn">Try again!</button>
+        </div>
+    </div>
+
+    <!-- Highscore page -->
+    <div class="hide" id="highscore-page">
+        <div class="highscore-container">
+            <div class="highscore-header">
+                <h1 class="highscore-h1">Highscores!</h1>
+            </div>
+
+            <!-- Highscores in local storage -->
+            <ul class="highscore-ul" id="scores"></ul>
+
+            <!-- Back to home page button -->
+            <button class="highscore-btn" id="go-back">Return to Quiz</button>
+
+            <!-- Clear storage button -->
+            <button class="highscore-btn" id="clear-scores">Clear Scores</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
-
-   <!--- <h2 class="questions">Answer all the quetions before the time runs out!</h2>
-        <div class="question" class="1">1. What data type is 1234?</div>
-        <div class="question" class="2">2. What data type is "Hello, World?"</div>
-        <div class="question" class="3">3. What data type is true/false?</div>
-        <div class="question" class="4"> 4. What data type is empty?</div>
-    <h3 id="answer choices">Here is where you will put the answer choices.</h3>
-        <div class="answer">Number</div>
-        <div class="answer">String</div>
-        <div class="answer">Boolean</div>
-        <div class="answer">Undefined</div>
-    --->
-
-
-
-<!--
-Questions for the game:
-1. What data type is 1234?
-    -number
-2. what data type is "Hello World"
-    -string
-3. What data type is true/false?
-    -boolean
-4. What data type is empty?
-    -undefined
-
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-
--->
